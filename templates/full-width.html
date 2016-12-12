@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ammoenio</title>
+
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=IE8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css" rel="stylesheet" type="text/css">
+        <script src="../js/bootstrap.min.js"></script>
+        
+
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="about.html">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Tests</a>
+                    </li>
+                    <li class="active">
+                        <a href="full-width.html">Project Management</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Biweekly Reports<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="portfolio-1-col.html">1st Report</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-2-col.html">2nd Report</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-3-col.html">3rd Report</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-4-col.html">4th Report</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Project Management
+                    <small></small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="../index.html">Home</a>
+                    </li>
+                    <li class="active">Project Management</li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Requirements -->
+    <section>
+    <h2>
+        Requirements
+    </h2>
+    <hr>
+
+     <div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Must Have</th>
+        <th>Should Have</th>
+        <th>Could Have</th>
+        <th>Would Have</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Allow the exchange of shares.</td>
+        <td>The ability to vote in company decisions.</td>
+        <td>Different types of business models such as reverse vesting.</td>
+        <td>Manage gain and loss in the sail of shares to be tax efficient.</td>
+      </tr>
+      <tr>
+        <td>Interactive and easy to use interface.</td>
+        <td>The possibility to buy different kinds of stocks such as preferential shares.</td>
+        <td>Allow for convertible notes.</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Transactions must be officialized with contracts that are smart and legal-binding.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  </section>
+    <!-- /Requirements -->
+
+
+        <!-- Gantt Chart -->
+        <h2 id="example">
+                Progress Gantt Chart
+            </h2>
+            <hr>
+
+            <div class="gantt"></div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="js/jquery.fn.gantt.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/latest/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+      <script>
+        $(function() {
+
+            "use strict";
+
+            $(".gantt").gantt({
+                source: [ 
+                {
+                    name: "Inventing Project",
+                    values: [{
+                        from: "/Date(1474483158000)/",
+                        to: "/Date(1475347158000)/",
+                        label: "",
+                        customClass: "ganttRed"
+                    }]
+                },
+                {
+                    name: "Smart Contract Deployment Research",
+                    values: [{
+                        from: "/Date(1474483158000)/",
+                        to: "/Date(1483213158000)/",
+                        label: "Test RPC, Truffle, Solidity",
+                        customClass: "ganttRed"
+                    }]
+                },
+                {
+                    name: "Equity Exchange Research",
+                    values: [{
+                        from: "/Date(1478806758000)/",
+                        to: "/Date(1485977958000)/",
+                        label: "Equity Exchange Research",
+                        customClass: "ganttRed"
+                    }]
+                },
+                {
+                    name: "Atos IT Challenge",
+                    values: [{
+                        from: "/Date(1478029158000)/",
+                        to: "/Date(1491071958000)/",
+                        label: "Participation To The Challenge",
+                        customClass: "ganttBlue"
+                    }]
+                },
+               /* {
+                    name: "Development",
+                    values: [{}]
+                },*/
+                {
+                    name: "Smart Contract Automation",
+                    values: [{
+                        from: "/Date(1483299558000)/",
+                        to: "/Date(1491071958000)/",
+                        label: "Smart Contract Automation",
+                        customClass: "ganttGreen"
+                    }]
+                },
+                {
+                    name: "Platform Development",
+                    values: [{
+                        from: "/Date(1483299558000)/",
+                        to: "/Date(1491071958000)/",
+                        label: "Platform Development",
+                        customClass: "ganttGreen"
+                    }]
+                },
+                
+                ],
+                navigate: "scroll",
+                scale: "weeks",
+                maxScale: "months",
+                minScale: "hours",
+                itemsPerPage: 10,
+                useCookie: true,
+                
+            })
+
+            prettyPrint();
+
+        });
+    </script>
+    <br>
+
+    <!-- /Gantt Chart -->
+
+    
+ <br>
+<!-- Sketches -->
+<section>
+    <h2>Sketches</h2>
+    <h4>Here you can explore our initial vision of the project's user interface.</h4>
+    <hr>
+        <div class="row"><img style="width: 100%;" src="../img/sketch1.png"></div> <br>
+        <div class="row"><img style="width: 100%;" src="../img/sketch2.png"></div> <br>
+        <div class="row"><img style="width: 100%;" src="../img/sketch3.png"></div>
+    
+</section>
+
+
+<!-- /Sketches -->
+ <br>
+
+    <!-- Task List -->
+
+    <section>
+        <h2> Task List</h2>
+        <div class="table-responsive">
+            <table class="table">
+                
+                <tbody>
+                    <tr>
+                        <td>Create private test network and establish blockchain with genesis block.</td>
+                        <td><i class="fa fa-check-square-o" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Create multiple ethereum wallets and start mining and transferring ether.</td>
+                        <td><i class="fa fa-check-square-o" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Create smart contracts and deploy them on the blockchain.</td>
+                        <td><i class="fa fa-check-square-o" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Create presentation website.</td>
+                        <td><i class="fa fa-check-square-o" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Create the UI for the project.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Confirm every detail of the business model.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Automate the creation of smart contracts and the ether transfers.</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- /Task List -->
+
+    <!-- Future Vision -->
+    <section>
+    <h2>Future Vision</h2>
+    <hr>
+    <p>We live in world of entrepreneurship and ideas. More and more young people are looking to bring their ideas to life and start their own businesses. Unfortunately, many start-up initiatives lack the funding they need to actually get started. While crowdfunding through donations already exists, most people do not want to invest dozens or hundreds of pounds just to have their name written somewhere. That is why most donations are very low and if not enough people are interested in donating, many fundings either fail short of achieving their goal or have to set quite some modest goals. <br><br>
+Equity crowdfunding changes all of that. Through Ammoenio, individuals get their own shares into the business which will later generate income either through dividends or through the sale of shares, whilst also having voting rights (dependent on the amount of owned shares) into the decisions of that company. Individuals are therefore much more interested in investing and companies have much higher chances of gathering the required money and achieving their goals. <br><br>
+The reason why individuals want to invest into companies and buy shares is quite simple: because it is one the best ways to save money whilst also making a profit out of them (according to moneyexpert.com and citizensadvice.org.uk). We live in a world where extremely low bank deposits interest rates are making people having to look for new ways to save money. The best way to do that is investing. Compared to traditional saving through bank deposits, investing has its risks, but if the company is successful, the financial rewards will be very large and more than worth the risk. That is why the best practice when investing is to invest in multiple companies.
+</p>
+    </section>
+
+    <!-- /Future Vision -->
+
+
+        <hr>
+
+        <!-- Footer -->
+        <footer class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Ammoenio 2016</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery 
+    <script src="../js/jquery.js"></script>
+
+     Bootstrap Core JavaScript -->
+    
+
+</body>
+
+</html>

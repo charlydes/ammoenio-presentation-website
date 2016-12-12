@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ammenio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="templates/about.html">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="templates/services.html">Tests</a>
+                    </li>
+                    <li>
+                        <a href="templates/full-width.html">Project Management</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Biweekly Reports<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="templates/portfolio-1-col.html">1st Report</a>
+                            </li>
+                            <li>
+                                <a href="templates/portfolio-2-col.html">2nd Report</a>
+                            </li>
+                            <li>
+                                <a href="templates/portfolio-3-col.html">3rd Report</a>
+                            </li>
+                            <li>
+                                <a href="templates/portfolio-4-col.html">4th Report</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="templates/contact.html">Contact</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Header Carousel -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                
+                <div id="msg" class="intro-heading">
+                <script>
+                    var showText = function (target, message, index, interval) {   
+                      if (index < message.length) {
+                        $(target).append(message[index++]);
+                        setTimeout(function () { showText(target, message, index, interval); }, interval);
+                      }
+                    }
+                    $(function () {
+
+                      showText("#msg", "Ammoenio", 0, 250);   
+
+                    });
+                </script>
+                </div>
+                <div id="div1" style="visibility:hidden;" class="intro-lead-in">Welcome the future of investing!</div>
+                <a id="div2" href="#services" class="page-scroll btn" style="padding-top:5%; visibility: hidden;"><img src="img/logos/down.png"></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div>
+
+       
+        <br><br>
+        <section id="services" class="bg-white">
+        <div class="container">
+            <div class="row">
+                    <h2 class="section-heading">What Do We Do?</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                <hr>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <img src="img/logos/handshake.png" style="width: 144px; padding-right:19px;">
+                    </span>
+                    <h4 class="service-heading">Equity Crowdfunding</h4>
+                    <p class="text-muted">We believe that small businesses have the potential to change the world. This is why we help companies get the funding they need to unleash their full potential.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <img src="img/logos/contract.png" style="width:144px; padding-right:36px;">
+                    </span>
+                    <h4 class="service-heading">Shares</h4>
+                    <p class="text-muted">We enable small and big investors to buy shares as opposed to directly found the companies. With Ammoenio anyone can become an investor and play an active role in the growth of the projects they believe in.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <img src="img/logos/lock.png" style="width:144px; padding-right:36px;">
+                    </span>
+                    <h4 class="service-heading">Security</h4>
+                    <p class="text-muted">We use Blockchain technology to ensure that every transaction is protected by the highest level of security.</p>
+                </div>
+            </div>
+        </div>
+         <br>
+    </section>
+
+   
+    <br>
+        <section id="team" class="container">
+        <h2 class="section-heading">Our Amazing Team</h2>
+                    <h3 class="section-subheading text-muted">We are a multicultural team of UCL students aged 19-21.</h3>
+                    <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4" style="text-align: center;">
+                    <div class="team-member">
+                        <img src="img/team/Gabriel.jpg" class="img-responsive img-circle" alt="">
+                        <br>
+                        <h4>Gabriel Vanca</h4>
+                        <p class="text-muted">Second year Computer Science student at University College London. Experienced in software and app development with background in mathematics and algorithms. Specifically interested in finance and data security.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-4" style="text-align: center;">
+                    <div class="team-member">
+                        <img src="img/team/Charles.jpg" class="img-responsive img-circle" alt="">
+                        <br>
+                        <h4>Charles Albert Desbaux</h4>
+                        <p class="text-muted">Half French half Italian, second year Computer Science student at University College London. Interested in software engineering, data security and algorithm design, with a background in web development.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-4" style="text-align: center;">
+                    <div class="team-member">
+                        <img src="img/team/Andreas.jpg" class="img-responsive img-circle" alt="">
+                        <br>
+                        <h4>Andreas Zinonos</h4>
+                        <p class="text-muted">Second year Computer Science student at University College London. Particularly interested in software development, algorithms and data science, with background in motion graphics and design.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+
+
+        <!-- Footer -->
+        <br><br>
+        <footer class="container">
+        <hr>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Ammoenio 2016</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    setTimeout(function(){
+document.getElementById('div1').style.visibility = "visible";
+},2150);
+    setTimeout(function(){
+document.getElementById('div2').style.visibility = "visible";
+},2150);
+    </script>
+
+</body>
+
+</html>
